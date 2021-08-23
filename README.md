@@ -1,7 +1,19 @@
 [![Deploy](https://telegra.ph/file/e38f317e4ead8f0c0c42a.jpg)](https://heroku.com/deploy?template=https://github.com/aryazakaria01/Kaguya-Shinomiya.git)
+
 # Kaguya Shinomiya
+[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)
+[![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://github.com/aryazakaria01)</br>
+
 ### Click Below Image to Deploy
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity) [![GPLv3 license](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://perso.crans.org/besson/LICENSE.html) [![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://makeapullrequest.com)
+[![Python Version](https://img.shields.io/badge/python-3.9.6-green?style=for-the-badge&logo=python)](https://docs.python.org)
+[![Issues](https://img.shields.io/github/issues/aryazakaria01/Yuii-Dev?style=for-the-badge&logo=github)](https://github.com/aryazakaria01/Yuii-Dev/issues)
+[![Forks](https://img.shields.io/github/forks/aryazakaria01/Yuii-Dev?style=for-the-badge&logo=github)](https://github.com/aryazakaria01/Yuii-Dev/network/members)
+[![Stars](https://img.shields.io/github/stars/aryazakaria01/Yuii-Dev?style=for-the-badge&logo=github)](https://github.com/aryazakaria01/Yuii-Dev/stargazers)
+[![LICENSE](https://img.shields.io/github/license/aryazakaria01/Yuii-Dev?style=for-the-badge&logo=github)](https://github.com/aryazakaria01/Yuii-Dev/blob/main/LICENSE)
+[![Contributors](https://img.shields.io/github/contributors/aryazakaria01/Yuii-Dev?style=for-the-badge&logo=github)](https://github.com/aryazakaria01/Yuii-Dev/graphs/contributors)
+[![Repository Size](https://img.shields.io/github/repo-size/aryazakaria01/Yuii-Dev?style=for-the-badge&logo=github)](https://github.com/aryazakaria01/Yuii-Dev/archive/refs/heads/main.zip)</br>
+![CodeFactor](https://www.codefactor.io/repository/github/aryazakaria01/yuii-dev/badge?s=7463f484136e45003925cb3d056a889ad02cc11c)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/aryazakaria01/Yuii-Dev)
 
 A modular Telegram Python bot running on python3 with a sqlalchemy database.
 
