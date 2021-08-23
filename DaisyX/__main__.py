@@ -90,22 +90,6 @@ buttons = [
 ]
 
 
-
-    [
-        InlineKeyboardButton(text="「 Help 」", callback_data="aboutmanu_"),
-    ],
-    [
-        InlineKeyboardButton(text="「 Help 」", callback_data="help_back"),
-    ],
-    [
-        InlineKeyboardButton(
-            text="「 Add Kaguya Shinomiya to your Group 」", url="t.me/YuiDefenderBot?startgroup=true"
-        ),
-    ],
-]
-
-
-
 HELP_STRINGS = f"""
 *Main* commands available:
 *I'm Maintained By* @Badboyanim 
