@@ -84,7 +84,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="💫 Add Daisy to your group 💫", url="t.me/YuiDefenderBot?startgroup=true"
+            text="💫 Add Kaguya to your group 💫", url="t.me/YuiDefenderBot?startgroup=true"
         ),
     ],
 ]  
