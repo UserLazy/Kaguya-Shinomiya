@@ -63,7 +63,7 @@ from DaisyX.modules.helper_funcs.misc import paginate_modules
 from DaisyX.modules.helper_funcs.readable_time import get_readable_time
 
 PM_START_TEXT = """
-──「 [Kaguya Shinomiya](https://telegra.ph/file/e38f317e4ead8f0c0c42a.jpg) 」──
+──「 [Kaguya Shinomiya](https://telegra.ph/file/18cbe40364ec9befb73c4.jpg) 」──
 *Yoshaa! {},*
 *I'm Anime themed group management bot*
 I've some features for you :)
@@ -89,7 +89,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="💫 ᴀᴅᴅ ᴋᴀɢᴜʏᴀ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 💫", url="t.me/Rio1roBot?startgroup=true"
+            text="💫 ᴀᴅᴅ ᴋᴀɢᴜʏᴀ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 💫", url="t.me/YuiDefenderBot?startgroup=true"
         ),
     ],
 ]    
@@ -227,8 +227,13 @@ def start(update: Update, context: CallbackContext):
                 IMPORTED["rules"].send_rules(update, args[0], from_pm=True)
 
         else:
+            first_name = update.effective_user.first_name
             update.effective_message.reply_text(
-                PM_START_TEXT,
+                    PM_START_TEXT.format(
+                    escape_markdown(first_name),
+                    escape_markdown(uptime),
+                    sql.num_users(),
+                    sql.num_chats()),
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
