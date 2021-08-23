@@ -6,7 +6,7 @@ import time
 import traceback
 from sys import argv
 from typing import Optional
-import DaisyX.modules.sql.users_sql as sql
+
 from telegram import (
     Chat,
     InlineKeyboardButton,
@@ -62,59 +62,49 @@ from DaisyX.modules.helper_funcs.chat_status import is_user_admin
 from DaisyX.modules.helper_funcs.misc import paginate_modules
 from DaisyX.modules.helper_funcs.readable_time import get_readable_time
 
-
-def get_readable_time(seconds: int) -> str:
-    count = 0
-    ping_time = ""
-    time_list = []
-    time_suffix_list = ["s", "m", "h", "days"]
-
-    while count < 4:
-        count += 1
-        remainder, result = divmod(seconds, 60) if count < 3 else divmod(seconds, 24)
-        if seconds == 0 and remainder == 0:
-            break
-        time_list.append(int(result))
-        seconds = int(remainder)
-
-    for x in range(len(time_list)):
-        time_list[x] = str(time_list[x]) + time_suffix_list[x]
-    if len(time_list) == 4:
-        ping_time += time_list.pop() + ", "
-
-    time_list.reverse()
-    ping_time += ":".join(time_list)
-
-    return ping_time
-
-
 PM_START_TEXT = """
-──「 [Kaguya Shinomiya](https://telegra.ph/file/18cbe40364ec9befb73c4.jpg) 」──
-
-*Yoshaa! {},*
-*I'm Anime themed group management bot*
-I've some features for you :)
-➖➖➖➖➖➖➖➖➖➖➖➖➖
-• *Uptime:* `{}`
-• `{}` *users, across* `{}` *chats.*
-➖➖➖➖➖➖➖➖➖➖➖➖➖
-➛ Find the list of available commands with /help ××
+Hello there, My Name is [Kaguya Shinomiya](https://telegra.ph/file/18cbe40364ec9befb73c4.jpg)
+𝕀 𝔸𝕄 𝔸 𝕂𝔸𝔾𝕌𝕐𝔸 𝕊ℍ𝕀ℕ𝕆𝕄𝕀𝕐𝔸 𝕋𝕆 ℙℝ𝕆𝕋𝔼ℂℂ 𝕐𝕆𝕌ℝ 𝕋𝔼𝕃𝔼𝔾ℝ𝔸𝕄 𝔾ℝ𝕆𝕌ℙ 𝔽ℝ𝕆𝕄 𝕊ℙ𝔸𝕄𝕄𝔼ℝ
+I will help you manage your group
+✦ Click Below help button or send /help to know all my Commands. 
 """
 
 buttons = [
     [
-        InlineKeyboardButton(text="🚀 INFO 🚀", callback_data="aboutmanu_"),
+        InlineKeyboardButton(text="「 ɪɴғᴏ 」", callback_data="aboutmanu_"),
     ],
     [
-        InlineKeyboardButton(text="❓ Help & Commands ❓", callback_data="help_back"),
+        InlineKeyboardButton(text="「 ʜᴇʟᴘ 」", callback_data="help_back"),
+    ],
+    [
+        InlineKeyboardButton(text="「 sᴜᴘᴘᴏʀᴛ 」", url="t.me/CyberSupportGroup"),
+    ],
+    [
+        InlineKeyboardButton(text="「 ᴜᴘᴅᴀᴛᴇs 」", url="t.me/CyberMusicProject"),
     ],
     [
         InlineKeyboardButton(
-            text="💫 Add Kaguya to your group 💫", url="t.me/YuiDefenderBot?startgroup=true"
+            text="「 ᴀᴅᴅ ᴋᴀɢᴜʏᴀ sʜɪɴᴏᴍɪʏᴀ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 」", url="t.me/Rio1roBot?startgroup=true"
         ),
     ],
-]  
-    
+]
+
+
+
+    [
+        InlineKeyboardButton(text="「 Help 」", callback_data="aboutmanu_"),
+    ],
+    [
+        InlineKeyboardButton(text="「 Help 」", callback_data="help_back"),
+    ],
+    [
+        InlineKeyboardButton(
+            text="「 Add Kaguya Shinomiya to your Group 」", url="t.me/YuiDefenderBot?startgroup=true"
+        ),
+    ],
+]
+
+
 
 HELP_STRINGS = f"""
 *Main* commands available:
@@ -249,18 +239,13 @@ def start(update: Update, context: CallbackContext):
                 IMPORTED["rules"].send_rules(update, args[0], from_pm=True)
 
         else:
-            first_name = update.effective_user.first_name
             update.effective_message.reply_text(
-                    PM_START_TEXT.format(
-                    escape_markdown(first_name),
-                    escape_markdown(uptime),
-                    sql.num_users(),
-                    sql.num_chats()),
+                PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
             )
-    else:
+        else:
         update.effective_message.reply_photo(
             KAGUYA_IMG,
             caption="I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>".format(
@@ -412,18 +397,18 @@ def DaisyX_about_callback(update, context):
                 [
                     [
                         InlineKeyboardButton(
-                            text="ʜᴏᴡ ᴛᴏ ᴜsᴇ ᴍᴇ", callback_data="aboutmanu_howto"
+                            text="How To Use Me", callback_data="aboutmanu_howto"
                         ),
                         InlineKeyboardButton(
-                            text="ᴛ & ᴄ", callback_data="aboutmanu_tac"
+                            text="T & C", callback_data="aboutmanu_tac"
                         ),
                     ],
                     [
                         InlineKeyboardButton(
-                            text="❔ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅs", callback_data="help_back"
+                            text="❔Help & Commands", callback_data="help_back"
                         )
                     ],
-                    [InlineKeyboardButton(text="ʙᴀᴄᴋ", callback_data="aboutmanu_back")],
+                    [InlineKeyboardButton(text="Back", callback_data="aboutmanu_back")],
                 ]
             ),
         )
