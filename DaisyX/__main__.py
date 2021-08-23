@@ -79,15 +79,21 @@ buttons = [
         InlineKeyboardButton(text="🚀 ɪɴғᴏ 🚀", callback_data="aboutmanu_"),
     ],
     [
-        InlineKeyboardButton(text="❓ ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅs ❓", callback_data="help_back"),
+        InlineKeyboardButton(text=" ❓ ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅs ❓", callback_data="help_back"),
+    ],
+    [
+        InlineKeyboardButton(text=" ᴄʜᴀɴɴᴇʟ ", url="t.me/CyberMusicProject"),
+    ],
+    [
+        InlineKeyboardButton(text=" ɢʀᴜᴘ sᴜᴘᴘᴏʀᴛ", url="t.me/CyberSupportGroup"),
     ],
     [
         InlineKeyboardButton(
-            text="💫 ᴀᴅᴅ ᴋᴀɢᴜʏᴀ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 💫", url="t.me/YuiDefenderBot?startgroup=true"
+            text="💫 ᴀᴅᴅ ᴋᴀɢᴜʏᴀ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 💫", url="t.me/Rio1roBot?startgroup=true"
         ),
     ],
-]
-
+]    
+    
 
 HELP_STRINGS = f"""
 *Main* commands available:
