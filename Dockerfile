@@ -64,12 +64,12 @@ RUN apt update && apt upgrade -y && \
 # Pypi package Repo upgrade
 RUN pip3 install --upgrade pip setuptools
 
-# Copy Python Requirements to /root/DaisyX
-RUN git clone -b shiken https://github.com/Infinity-Bots/LizaDaisyX /root/DaisyX
-WORKDIR /root/DaisyX
+# Copy Python Requirements to /root/Kaguya-Shinomiya
+RUN git clone -b shiken https://github.com/aryazakaria01/Kaguya-Shinomiya /root/Kaguya-Shinomiya
+WORKDIR /root/Kaguya-Shinomiya
 
-#Copy config file to /root/DaisyX/DaisyX
-COPY ./DaisyX/sample_config.py ./DaisyX/config.py* /root/DaisyX/DaisyX/
+#Copy config file to /root/Kaguya-Shinomiya/Kaguya-Shinomiya
+COPY ./Kaguya-Shinomiya/sample_config.py ./Kaguya-Shinomiya/config.py* /root/Kaguya-Shinomiya/Kaguya-Shinomiya/
 
 ENV PATH="/home/bot/bin:$PATH"
 
@@ -77,4 +77,4 @@ ENV PATH="/home/bot/bin:$PATH"
 RUN pip3 install -U -r requirements.txt
 
 # Starting Worker
-CMD ["python3","-m","DaisyX"]
+CMD ["python3","-m","Kaguya-Shinomiya"]
