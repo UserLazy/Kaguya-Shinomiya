@@ -79,10 +79,54 @@ __help__ = """
  *You can either enter just the song name or both the artist and song
   name. *
 
- ✪ /song <songname artist(optional)>*:* uploads the song in it's best quality available
- ✪ /video <songname artist(optional)>*:* uploads the video song in it's best quality available
- ✪ /lyrics <song>*:* returns the lyrics of that song.
+Holla Welcome to help menu ✨
 
+📌 HOW TO USE CYBER MUSIC GROUP ?
+
+1. First add me to your group.
+2. Promote me as admin and give all permission.
+3. Then, add @SaitamaHelper to your group or you can type /userbotjoin.
+3. Turn on the VCG first before playing music.
+
+📌 Command for all group members:
+
+/play (song title) - play music via youtube
+/stream (reply to audio) - play music via reply audio
+/playlist - show playlist
+/current - shows what is currently playing
+/song (song title) - download music via youtube
+/search (video name) - search for videos from youtube in detail
+/vsong (video name) - download videos from youtube in detail
+/vk (song title) - download via inline mode
+
+📌 Commands for admin:
+
+/player - opens the music settings panel
+/pause - pause music playback
+/resume - resume music playing
+/skip - skips the currently playing song
+/end - stop music
+/userbotjoin - invite assistants to your group
+/reload - to update admin list
+/cache - to clear admin cache
+/musicplayer (on / off) - turn on/off the music player in your group
+
+🎧 Channel streaming commands:
+
+/cplay - listen to music via channel
+/cplayer - view playlists
+/cpause - pause music player
+/cresume - resume paused music
+/cskip - skips the currently playing song
+/cend - stop the song
+/admincache - update admin cache
+️ command for sudo users:
+/userbotleaveall - remove assistant from all groups
+/gcast - send broadcast messages
+
+📌 Commands for fun:
+
+/lyrics - (song title) see lyrics
 """
 
-__mod_name__ = "Music 🎧"
+__mod_name__ = "Music Player"
