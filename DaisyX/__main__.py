@@ -6,7 +6,7 @@ import time
 import traceback
 from sys import argv
 from typing import Optional
-
+import DaisyX.modules.sql.users_sql as sql
 from telegram import (
     Chat,
     InlineKeyboardButton,
