@@ -64,6 +64,7 @@ from DaisyX.modules.helper_funcs.readable_time import get_readable_time
 
 PM_START_TEXT = """
 ──「 [Kaguya Shinomiya](https://telegra.ph/file/18cbe40364ec9befb73c4.jpg) 」──
+
 *Yoshaa! {},*
 *I'm Anime themed group management bot*
 I've some features for you :)
@@ -111,6 +112,7 @@ Bug Report to @YuiiSupport[.](https://telegra.ph/file/18cbe40364ec9befb73c4.jpg)
     "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n",
 )
 
+KAGUYA_IMG = "https://telegra.ph/file/e38f317e4ead8f0c0c42a.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 You can donate to the original writer's of the Base code,
@@ -239,12 +241,12 @@ def start(update: Update, context: CallbackContext):
                 timeout=60,
             )
     else:
-        update.effective_message.reply_text(
-            "I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>".format(
-                uptime
-            ),
+        update.effective_message.reply_photo(
+            KAGUYA_IMG,
+            caption="I'm awake already!\n<b>Haven't slept since:</b> <code>{}</code>".format(
+                uptime),
             parse_mode=ParseMode.HTML,
-        )
+            )
 
 
 def error_handler(update, context):
