@@ -77,23 +77,17 @@ I've some features for you :)
 
 buttons = [
     [
-        InlineKeyboardButton(text="🚀 ɪɴғᴏ 🚀", callback_data="aboutmanu_"),
+        InlineKeyboardButton(text="🚀 INFO 🚀", callback_data="aboutmanu_"),
     ],
     [
-        InlineKeyboardButton(text=" ❓ ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅs ❓", callback_data="help_back"),
-    ],
-    [
-        InlineKeyboardButton(text=" ᴄʜᴀɴɴᴇʟ ", url="t.me/CyberMusicProject"),
-    ],
-    [
-        InlineKeyboardButton(text=" ɢʀᴜᴘ sᴜᴘᴘᴏʀᴛ", url="t.me/CyberSupportGroup"),
+        InlineKeyboardButton(text="❓ Help & Commands ❓", callback_data="help_back"),
     ],
     [
         InlineKeyboardButton(
-            text="💫 ᴀᴅᴅ ᴋᴀɢᴜʏᴀ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ 💫", url="t.me/YuiDefenderBot?startgroup=true"
+            text="💫 Add Daisy to your group 💫", url="t.me/YuiDefenderBot?startgroup=true"
         ),
     ],
-]    
+]  
     
 
 HELP_STRINGS = f"""
