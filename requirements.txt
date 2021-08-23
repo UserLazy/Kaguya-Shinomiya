@@ -14,7 +14,7 @@ geopy
 nltk
 psutil
 aiohttp>=2.2.5
-Pillow>=8.3.1
+Pillow>=4.2.0
 CurrencyConverter
 googletrans==3.1.0a0
 jikanpy
@@ -35,14 +35,14 @@ fontTools
 gtts
 tswift
 pytz
-youtube_dl==2021.06.06
+youtube_dl
 PyYAML>=5.3.1
 redis
 html2text
 pythonping
 html_telegraph_poster
 pytube
-youtube-search-python==1.4.6
+youtube-search-python
 instantmusic
 PyLyrics
 hachoir
