@@ -4,7 +4,7 @@ lxml
 beautifulsoup4
 requests
 sqlalchemy==1.3.20
-python-telegram-bot==12.8
+python-telegram-bot==13.7
 psycopg2-binary==2.8.6
 feedparser
 pynewtonmath
@@ -14,7 +14,7 @@ geopy
 nltk
 psutil
 aiohttp>=2.2.5
-Pillow>=4.2.0
+Pillow>=8.3.1
 CurrencyConverter
 googletrans==3.1.0a0
 jikanpy
@@ -35,14 +35,14 @@ fontTools
 gtts
 tswift
 pytz
-youtube_dl
+youtube_dl==2021.06.06
 PyYAML>=5.3.1
 redis
 html2text
 pythonping
 html_telegraph_poster
 pytube
-youtube-search-python
+youtube-search-python==1.4.6
 instantmusic
 PyLyrics
 hachoir
