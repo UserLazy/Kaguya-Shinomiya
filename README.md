@@ -6,13 +6,13 @@
 
 ### Click Below Image to Deploy
 [![Python Version](https://img.shields.io/badge/python-3.9.6-green?style=for-the-badge&logo=python)](https://docs.python.org)
-[![Issues](https://img.shields.io/github/issues/aryazakaria01/Yuii-Dev?style=for-the-badge&logo=github)](https://github.com/aryazakaria01/Yuii-Dev/issues)
-[![Forks](https://img.shields.io/github/forks/aryazakaria01/Yuii-Dev?style=for-the-badge&logo=github)](https://github.com/aryazakaria01/Yuii-Dev/network/members)
-[![Stars](https://img.shields.io/github/stars/aryazakaria01/Yuii-Dev?style=for-the-badge&logo=github)](https://github.com/aryazakaria01/Yuii-Dev/stargazers)
-[![LICENSE](https://img.shields.io/github/license/aryazakaria01/Yuii-Dev?style=for-the-badge&logo=github)](https://github.com/aryazakaria01/Yuii-Dev/blob/main/LICENSE)
-[![Contributors](https://img.shields.io/github/contributors/aryazakaria01/Yuii-Dev?style=for-the-badge&logo=github)](https://github.com/aryazakaria01/Yuii-Dev/graphs/contributors)
-[![Repository Size](https://img.shields.io/github/repo-size/aryazakaria01/Yuii-Dev?style=for-the-badge&logo=github)](https://github.com/aryazakaria01/Yuii-Dev/archive/refs/heads/main.zip)</br>
-![CodeFactor](https://www.codefactor.io/repository/github/aryazakaria01/yuii-dev/badge?s=7463f484136e45003925cb3d056a889ad02cc11c)
+[![Issues](https://img.shields.io/github/issues/aryazakaria01/Kaguya-Shinomiya?style=for-the-badge&logo=github)](https://github.com/aryazakaria01/Kaguya-Shinomiya/issues)
+[![Forks](https://img.shields.io/github/forks/aryazakaria01/Kaguya-Shinomiya?style=for-the-badge&logo=github)](https://github.com/aryazakaria01/Kaguya-Shinomiya/network/members)
+[![Stars](https://img.shields.io/github/stars/aryazakaria01/Kaguya-Shinomiya?style=for-the-badge&logo=github)](https://github.com/aryazakaria01/Kaguya-Shinomiya/stargazers)
+[![LICENSE](https://img.shields.io/github/license/aryazakaria01/Kaguya-Shinomiya?style=for-the-badge&logo=github)](https://github.com/aryazakaria01/Yuii-Dev/blob/main/LICENSE)
+[![Contributors](https://img.shields.io/github/contributors/aryazakaria01/Kaguya-Shinomiya?style=for-the-badge&logo=github)](https://github.com/aryazakaria01/Kaguya-Shinomiya/graphs/contributors)
+[![Repository Size](https://img.shields.io/github/repo-size/aryazakaria01/Kaguya-Shinomiya?style=for-the-badge&logo=github)](https://github.com/aryazakaria01/Kaguya-Shinomiya/archive/refs/heads/main.zip)</br>
+![CodeFactor](https://www.codefactor.io/repository/github/aryazakaria01/Kaguya-Shinomiya/badge?s=7463f484136e45003925cb3d056a889ad02cc11c)
 
 A modular Telegram Python bot running on python3 with a sqlalchemy database.
 
