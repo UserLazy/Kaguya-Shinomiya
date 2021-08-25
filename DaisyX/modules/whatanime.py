@@ -79,7 +79,7 @@ async def whatanime(e):
             resp0 = await raw_resp0.json()
         js0 = resp0.get("result")
         if not js0:
-            await e.reply("`No results found.`")
+            await kontol.edit("`No results found.`")
             return
         js0 = js0[0]
         text = f'<b>{html.escape(js0["anilist"]["title"]["romaji"])}'
